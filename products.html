@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products – G Tech CCTV Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<button onclick="window.scrollTo({top:0,behavior:'smooth'})" id="scrollTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
+<div id="waFloat"><div class="wa-tooltip">WhatsApp Us</div><a href="https://wa.me/918890977017" target="_blank" class="wa-main"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a></div>
+<div id="imgLightbox" onclick="if(event.target===this)closeLightbox()"><button id="lbClose" onclick="closeLightbox()">✕</button><img id="lbImg" src="" alt=""/></div>
+
+<div class="upperheader"><div class="container"><div class="upperheader-box"><div class="socialmedia-upper"><a href="tel:+918890977017"><i class="fa-solid fa-phone"></i>8890977017</a><a href="mailto:Guleriyatrading@gmail.com"><i class="fa-regular fa-envelope"></i>Guleriyatrading@gmail.com</a></div><div class="socialmedia-upper"><a href="https://wa.me/918890977017" target="_blank"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a></div></div></div></div>
+
+<header class="navbar" id="navbar">
+  <button class="hamburger" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
+  <a href="index.html" class="logo-wrap"><div class="logo-icon"><svg width="26" height="26" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="12" stroke="#38bdf8" stroke-width="2"/><circle cx="18" cy="18" r="5" fill="#38bdf8"/><line x1="23" y1="13" x2="29" y2="7" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/></svg></div><div class="logo-text"><span class="logo-main">G Tech</span><span class="logo-sub">CCTV Solutions</span></div></a>
+  <nav class="menu" id="navMenu"><ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html" style="color:#1a73e8">Products</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul></nav>
+  <div class="nav-actions"><a href="tel:+918890977017" style="background:#16a34a;color:#fff;padding:.5rem 1.1rem;border-radius:6px;font-weight:700;font-size:.85rem;display:inline-flex;align-items:center;gap:.4rem;text-decoration:none"><i class="fa fa-phone"></i>8890977017</a></div>
+</header>
+
+<div class="page-hero"><div class="eyebrow">Our Catalogue</div><h1>All Products</h1><p>Click any product to see full specifications. Call us for best price!</p></div>
+
+<div style="background:#fafafa;padding:3rem 0 4rem">
+  <div class="container">
+    <div class="filter-bar" style="overflow-x:auto;flex-wrap:nowrap;padding-bottom:.5rem">
+      <button class="filter-btn active" data-cat="all">All Products</button>
+      <button class="filter-btn" data-cat="outdoor">Outdoor</button>
+      <button class="filter-btn" data-cat="indoor">Indoor / Dome</button>
+      <button class="filter-btn" data-cat="wifi">WiFi / 4G</button>
+      <button class="filter-btn" data-cat="dashcam">CarKam / Dashcam</button>
+      <button class="filter-btn" data-cat="switch">PoE Switches</button>
+      <button class="filter-btn" data-cat="accessories">Accessories</button>
+      <button class="filter-btn" data-cat="bodycam">Body Cameras</button>
+    </div>
+    <div class="product-box-main" id="allProductsGrid" style="justify-content:flex-start"></div>
+  </div>
+</div>
+
+<div class="newsletter-section"><div class="container"><div class="newsletter-inner"><div><h3>Not Sure Which Camera?</h3><p>Our experts will guide you — free consultation, no obligation.</p></div><div class="newsletter-form"><input type="tel" placeholder="Your WhatsApp number" id="nlPhone"/><button onclick="sendWA()">Get Free Advice</button></div></div></div></div>
+
+<footer class="custom-footer">
+  <div class="footer-top container">
+    <div class="footer-col"><h4>G Tech CCTV</h4><p>Your Trusted Security Partner in Rajasthan.</p><div class="social-icons"><a href="#" class="icons facebook"><i class="fab fa-facebook-f"></i></a><a href="#" class="icons instagram"><i class="fab fa-instagram"></i></a><a href="https://wa.me/918890977017" class="icons whatsapp"><i class="fab fa-whatsapp"></i></a></div></div>
+    <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="products.html">Products</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col contact-us"><h4>Contact</h4><a href="tel:+918890977017"><i class="fa fa-phone"></i>+91 8890977017</a><a href="mailto:Guleriyatrading@gmail.com"><i class="fa fa-envelope"></i>Guleriyatrading@gmail.com</a><a><i class="fa fa-location-dot"></i>Kuchaman City, Rajasthan</a></div>
+  </div>
+  <div class="footer-bottom"><p>© 2024 G Tech CCTV Solutions. All rights reserved.</p></div>
+</footer>
+
+<div id="modalOverlay" style="position:fixed;inset:0;z-index:1000;background:rgba(5,15,30,.82);backdrop-filter:blur(5px);display:flex;align-items:center;justify-content:center;padding:1rem;opacity:0;pointer-events:none;transition:opacity .3s" onclick="if(event.target===this)closeModal()">
+  <div id="modalBox" style="background:#fff;border-radius:14px;width:100%;max-width:980px;max-height:92vh;overflow-y:auto;position:relative;transform:scale(.94);transition:transform .3s;box-shadow:0 24px 64px rgba(0,0,0,.4);border-top:3px solid #1a73e8" onclick="event.stopPropagation()">
+    <button onclick="closeModal()" style="position:sticky;top:1rem;float:right;margin:1rem;width:36px;height:36px;border-radius:50%;background:#f1f5f9;border:1.5px solid #ddd;font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:10;font-family:inherit;transition:all .2s" onmouseover="this.style.background='#fee2e2'" onmouseout="this.style.background='#f1f5f9'">✕</button>
+    <div id="modalContent" style="padding:1.5rem 1.75rem 2rem;clear:both"></div>
+  </div>
+</div>
+<script src="products-data.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
