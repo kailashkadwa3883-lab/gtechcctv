@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>G Tech CCTV Solutions – Complete Security Systems | Kuchaman City</title>
+  <meta name="description" content="G Tech CCTV Solutions — Professional CCTV installation, IP cameras, access control & fire alarm systems in Kuchaman City, Rajasthan."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- SCROLL TOP -->
+<button onclick="window.scrollTo({top:0,behavior:'smooth'})" id="scrollTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- WHATSAPP FLOAT -->
+<div id="waFloat">
+  <div class="wa-tooltip">Chat on WhatsApp</div>
+  <a href="https://wa.me/918890977017?text=Hello%20G%20Tech%2C%20I%20need%20a%20CCTV%20quote." target="_blank" class="wa-main" title="WhatsApp Us">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
+
+<!-- LIGHTBOX -->
+<div id="imgLightbox" onclick="if(event.target===this)closeLightbox()">
+  <button id="lbClose" onclick="closeLightbox()">✕</button>
+  <img id="lbImg" src="" alt=""/>
+</div>
+
+<!-- UPPER HEADER -->
+<div class="upperheader">
+  <div class="container">
+    <div class="upperheader-box">
+      <div class="socialmedia-upper">
+        <a href="tel:+918890977017"><i class="fa-solid fa-phone"></i>Call: 8890977017</a>
+        <a href="mailto:Guleriyatrading@gmail.com"><i class="fa-regular fa-envelope"></i>Guleriyatrading@gmail.com</a>
+      </div>
+      <div class="socialmedia-upper">
+        <a href="https://wa.me/918890977017" target="_blank"><i class="fa-brands fa-whatsapp"></i>WhatsApp Us</a>
+        <a href="#"><i class="fa-solid fa-location-dot"></i>Kuchaman City, Rajasthan</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <button class="hamburger" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
+  <a href="index.html" class="logo-wrap">
+    <div class="logo-icon">
+      <svg width="26" height="26" viewBox="0 0 36 36" fill="none">
+        <circle cx="18" cy="18" r="12" stroke="#38bdf8" stroke-width="2"/>
+        <circle cx="18" cy="18" r="5" fill="#38bdf8"/>
+        <line x1="23" y1="13" x2="29" y2="7" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="29" cy="7" r="2.5" fill="#38bdf8"/>
+      </svg>
+    </div>
+    <div class="logo-text">
+      <span class="logo-main">G Tech</span>
+      <span class="logo-sub">CCTV Solutions</span>
+    </div>
+  </a>
+
+  <nav class="menu" id="navMenu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="products.html">Products <i class="fa-solid fa-angle-down"></i></a>
+        <div class="mega-dropdown">
+          <div class="mega-content">
+            <div class="dropdown-col">
+              <h4>Cameras</h4>
+              <ul>
+                <li><a href="products.html?cat=outdoor">Outdoor Bullet Cameras</a></li>
+                <li><a href="products.html?cat=indoor">Indoor Dome Cameras</a></li>
+                <li><a href="products.html?cat=wifi">WiFi / IP Cameras</a></li>
+                <li><a href="products.html?cat=ptz">PTZ Speed Dome</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-col">
+              <h4>Recording</h4>
+              <ul>
+                <li><a href="products.html?cat=kit">DVR Systems</a></li>
+                <li><a href="products.html?cat=kit">NVR Systems</a></li>
+                <li><a href="products.html?cat=kit">Complete Kits</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-col">
+              <h4>Brands</h4>
+              <ul>
+                <li><a href="products.html">Hikvision</a></li>
+                <li><a href="products.html">CP Plus</a></li>
+                <li><a href="products.html">Dahua</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-col">
+              <h4>Services</h4>
+              <ul>
+                <li><a href="services.html">CCTV Installation</a></li>
+                <li><a href="services.html">Access Control</a></li>
+                <li><a href="services.html">Fire Alarm</a></li>
+                <li><a href="services.html">Maintenance & AMC</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="nav-actions">
+    <button id="searchBtn" title="Search"><i class="fa fa-search"></i></button>
+    <a href="tel:+918890977017" style="background:#16a34a;color:#fff;padding:.5rem 1.1rem;border-radius:6px;font-weight:700;font-size:.85rem;display:inline-flex;align-items:center;gap:.4rem;white-space:nowrap"><i class="fa fa-phone"></i>8890977017</a>
+  </div>
+</header>
+
+<!-- SEARCH BAR -->
+<div id="searchBar">
+  <div class="container">
+    <input type="text" id="searchInput" placeholder="Search CCTV cameras, DVRs, kits..." autocomplete="off"/>
+  </div>
+</div>
+
+<!-- HERO SLIDER -->
+<div class="main-banner-section">
+  <div class="slider">
+    <div class="slider-container auto-slider" id="heroSlider">
+      <div class="slide active" style="background-image:url('outdoor_1.jpg')">
+        <div style="position:absolute;inset:0;background:linear-gradient(110deg,rgba(10,25,48,.88) 45%,rgba(10,25,48,.4) 100%)"></div>
+        <div class="info">
+          <h1>Complete Security Solutions</h1>
+          <p>Advanced CCTV systems for homes, shops & businesses across Rajasthan. HD cameras, expert installation, 24/7 support.</p>
+          <a href="contact.html" class="banner-btn">Get Free Quote</a>
+        </div>
+      </div>
+      <div class="slide" style="background-image:url('combo_1.jpg')">
+        <div style="position:absolute;inset:0;background:linear-gradient(110deg,rgba(10,25,48,.88) 45%,rgba(10,25,48,.4) 100%)"></div>
+        <div class="info">
+          <h1>Shop the Best CCTV Cameras</h1>
+          <p>Original Hikvision, CP Plus & Dahua cameras at best prices. All products with 1 year warranty.</p>
+          <a href="products.html" class="banner-btn">Shop Now</a>
+        </div>
+      </div>
+      <div class="slide" style="background-image:url('install_1.jpg')">
+        <div style="position:absolute;inset:0;background:linear-gradient(110deg,rgba(10,25,48,.88) 45%,rgba(10,25,48,.4) 100%)"></div>
+        <div class="info">
+          <h1>Professional Installation</h1>
+          <p>Free on-site survey, expert technicians, clean wiring. Serving Kuchaman City & all of Rajasthan.</p>
+          <a href="services.html" class="banner-btn">Our Services</a>
+        </div>
+      </div>
+    </div>
+    <div class="dots-navigation" id="heroDots">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+    </div>
+  </div>
+</div>
+
+<!-- CATEGORIES -->
+<div class="categories-list">
+  <div class="container">
+    <div class="men-women-watch">
+      <div class="men-women-watch-box" onclick="location.href='products.html?cat=outdoor'">
+        <div class="men-women-watch-box-image">
+          <img src="outdoor_1.jpg" alt="Outdoor Cameras"/>
+        </div>
+        <div class="cat-overlay"></div>
+        <h6>Outdoor Cameras</h6>
+      </div>
+      <div class="men-women-watch-box" onclick="location.href='products.html?cat=indoor'">
+        <div class="men-women-watch-box-image">
+          <img src="combo_1.jpg" alt="Indoor Cameras"/>
+        </div>
+        <div class="cat-overlay"></div>
+        <h6>Indoor Cameras</h6>
+      </div>
+      <div class="men-women-watch-box" onclick="location.href='products.html?cat=wifi'">
+        <div class="men-women-watch-box-image">
+          <img src="wifi_1.jpg" alt="WiFi Cameras"/>
+        </div>
+        <div class="cat-overlay"></div>
+        <h6>WiFi / IP Cameras</h6>
+      </div>
+      <div class="men-women-watch-box" onclick="location.href='products.html?cat=kit'">
+        <div class="men-women-watch-box-image">
+          <img src="kit_8cam.png" alt="Complete Kits"/>
+        </div>
+        <div class="cat-overlay"></div>
+        <h6>Complete Kits</h6>
+      </div>
+      <div class="men-women-watch-box" onclick="location.href='products.html?cat=ptz'">
+        <div class="men-women-watch-box-image">
+          <img src="ptz_1.jpg" alt="PTZ Cameras"/>
+        </div>
+        <div class="cat-overlay"></div>
+        <h6>PTZ Cameras</h6>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- NEW ARRIVALS / FEATURED PRODUCTS -->
+<div class="main-product-arrvial" id="featured-products">
+  <div class="container">
+    <div class="product-heading-arrival">
+      <h6>Top Picks</h6>
+      <h3>Featured Products</h3>
+    </div>
+    <div class="product-box-main" id="featuredGrid"></div>
+    <div class="product-view-more-btn">
+      <a href="products.html" class="product-btn"><span>View All Products</span></a>
+    </div>
+  </div>
+</div>
+
+<!-- BRANDS -->
+<div class="main-brand-list">
+  <div class="container">
+    <div class="product-heading-arrival">
+      <h3>Authorised Dealer</h3>
+    </div>
+    <div class="brand-list-box-main">
+      <div class="brand-list-box-image"><img src="hikvision_1.jpg" alt="Hikvision"/></div>
+      <div class="brand-list-box-image"><img src="outdoor_2.jpg" alt="CP Plus"/></div>
+      <div class="brand-list-box-image"><img src="combo_1.jpg" alt="Dahua"/></div>
+      <div class="brand-list-box-image"><img src="install_1.jpg" alt="Samsung"/></div>
+      <div class="brand-list-box-image"><img src="kit_1.jpg" alt="Honeywell"/></div>
+    </div>
+  </div>
+</div>
+
+<!-- SPECIAL OFFER / PROMO SECTION -->
+<div class="special-offer-section">
+  <div class="container">
+    <div class="special-offer-main">
+      <div class="special-text">
+        <span class="special-offer-badge">FREE INSTALLATION OFFER</span>
+        <h6>Limited Time</h6>
+        <h5>Free On-Site Survey + Installation</h5>
+        <p>Book any complete CCTV kit and get free professional installation within Kuchaman City. Expert technicians, clean wiring, mobile viewing setup — all included.</p>
+        <a href="contact.html" class="product-btn"><span>Book Now</span></a>
+      </div>
+      <div class="special-image">
+        <img src="install_1.jpg" alt="Free CCTV Installation"/>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MOST POPULAR -->
+<div class="main-product-arrvial" id="most-popular">
+  <div class="container">
+    <div class="product-heading-arrival">
+      <h6>Customer Favourites</h6>
+      <h3>Most Popular</h3>
+    </div>
+    <div class="product-box-main" id="popularGrid"></div>
+  </div>
+</div>
+
+<!-- TESTIMONIALS -->
+<div class="testimonial-container">
+  <div class="image-section">
+    <img src="outdoor_3.jpg" alt="CCTV Installation"/>
+  </div>
+  <div class="text-section">
+    <div class="testimonial active">
+      <div class="quote-icon"><i class="fa fa-quote-left"></i></div>
+      <p class="quote-text">"G Tech CCTV Solutions installed 8 cameras in my shop in a single day. The picture quality is crystal clear and I can monitor everything from my phone. Highly recommended!"</p>
+      <div class="author-info">
+        <div>
+          <div class="name">Rahul Sharma</div>
+          <div class="role">Shop Owner, Kuchaman City</div>
+          <div style="color:#ffc107;margin-top:4px">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial">
+      <div class="quote-icon"><i class="fa fa-quote-left"></i></div>
+      <p class="quote-text">"Got the 4-camera home kit installed last month. The setup was smooth, app works perfectly, and night vision is excellent. Great service and very professional team!"</p>
+      <div class="author-info">
+        <div>
+          <div class="name">Priya Mehta</div>
+          <div class="role">Homeowner, Nagaur</div>
+          <div style="color:#ffc107;margin-top:4px">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial">
+      <div class="quote-icon"><i class="fa fa-quote-left"></i></div>
+      <p class="quote-text">"Very professional installation. Cameras work great, pricing was fair, and the team explained everything clearly. Will definitely order again for my warehouse."</p>
+      <div class="author-info">
+        <div>
+          <div class="name">Anil Verma</div>
+          <div class="role">Warehouse Owner, Jodhpur</div>
+          <div style="color:#ffc107;margin-top:4px">★★★★☆</div>
+        </div>
+      </div>
+    </div>
+    <div class="nav-buttons">
+      <button onclick="prevTestimonial()"><i class="fa fa-chevron-left"></i></button>
+      <button onclick="nextTestimonial()"><i class="fa fa-chevron-right"></i></button>
+    </div>
+  </div>
+</div>
+
+<!-- INFO STRIP -->
+<div class="info-section">
+  <div class="info-item">
+    <div class="info-icon"><i class="fa fa-tools"></i></div>
+    <div class="info-text"><h4>Free Installation</h4><p>Professional setup at your location</p></div>
+  </div>
+  <div class="info-item">
+    <div class="info-icon"><i class="fa fa-shield-alt"></i></div>
+    <div class="info-text"><h4>1 Year Warranty</h4><p>On all products & installation</p></div>
+  </div>
+  <div class="info-item">
+    <div class="info-icon"><i class="fa fa-mobile-alt"></i></div>
+    <div class="info-text"><h4>Live Mobile View</h4><p>Watch cameras from anywhere, free app</p></div>
+  </div>
+  <div class="info-item">
+    <div class="info-icon"><i class="fa fa-headset"></i></div>
+    <div class="info-text"><h4>24/7 Support</h4><p>Call or WhatsApp anytime</p></div>
+  </div>
+  <div class="info-item">
+    <div class="info-icon"><i class="fa fa-certificate"></i></div>
+    <div class="info-text"><h4>Original Brands</h4><p>Hikvision, CP Plus, Dahua</p></div>
+  </div>
+</div>
+
+<!-- NEWSLETTER / CTA -->
+<div class="newsletter-section">
+  <div class="container">
+    <div class="newsletter-inner">
+      <div>
+        <h3>Ready to Secure Your Property?</h3>
+        <p>Get a free consultation and quote within 24 hours — no obligation.</p>
+      </div>
+      <div class="newsletter-form">
+        <input type="tel" placeholder="Your WhatsApp number" id="nlPhone"/>
+        <button onclick="sendWA()">Get Free Quote</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="custom-footer">
+  <div class="footer-top container">
+    <div class="footer-col">
+      <h4>G Tech CCTV</h4>
+      <p>Your Trusted Security Partner. Professional CCTV solutions for homes and businesses across Rajasthan since 2019.</p>
+      <div class="social-icons">
+        <a href="#" class="icons facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="icons instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/918890977017" class="icons whatsapp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Products</h4>
+      <ul>
+        <li><a href="products.html?cat=outdoor">Outdoor Cameras</a></li>
+        <li><a href="products.html?cat=indoor">Indoor Cameras</a></li>
+        <li><a href="products.html?cat=wifi">WiFi / IP Cameras</a></li>
+        <li><a href="products.html?cat=kit">Complete Kits</a></li>
+        <li><a href="products.html?cat=ptz">PTZ Cameras</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">CCTV Installation</a></li>
+        <li><a href="services.html">IP Camera Systems</a></li>
+        <li><a href="services.html">Access Control</a></li>
+        <li><a href="services.html">Fire Alarm Systems</a></li>
+        <li><a href="services.html">Maintenance & AMC</a></li>
+      </ul>
+    </div>
+    <div class="footer-col contact-us">
+      <h4>Contact Us</h4>
+      <a href="tel:+918890977017"><i class="fa fa-phone"></i>+91 8890977017</a>
+      <a href="mailto:Guleriyatrading@gmail.com"><i class="fa fa-envelope"></i>Guleriyatrading@gmail.com</a>
+      <a href="#"><i class="fa fa-location-dot"></i>Electronics Market, Kuchaman City, Rajasthan</a>
+      <a href="#"><i class="fa fa-clock"></i>Mon–Sat: 9:00 AM – 7:00 PM</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 G Tech CCTV Solutions. All rights reserved. | Kuchaman City, Rajasthan</p>
+  </div>
+</footer>
+
+<!-- PRODUCT MODAL -->
+<div id="modalOverlay" style="position:fixed;inset:0;z-index:1000;background:rgba(5,15,30,.8);backdrop-filter:blur(5px);display:flex;align-items:center;justify-content:center;padding:1rem;opacity:0;pointer-events:none;transition:opacity .3s" onclick="if(event.target===this)closeModal()">
+  <div id="modalBox" style="background:#fff;border-radius:12px;width:100%;max-width:960px;max-height:92vh;overflow-y:auto;position:relative;transform:scale(.94);transition:transform .3s;box-shadow:0 24px 64px rgba(0,0,0,.4);border-top:3px solid #1a73e8" onclick="event.stopPropagation()">
+    <button onclick="closeModal()" style="position:sticky;top:1rem;float:right;margin:1rem;width:36px;height:36px;border-radius:50%;background:#f1f5f9;border:1.5px solid #ddd;font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:10;transition:all .2s;font-family:inherit" onmouseover="this.style.background='#fee2e2'" onmouseout="this.style.background='#f1f5f9'">✕</button>
+    <div id="modalContent" style="padding:1.5rem 1.75rem 2rem;clear:both"></div>
+  </div>
+</div>
+
+<script src="products-data.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
