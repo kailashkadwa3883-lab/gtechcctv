@@ -40,13 +40,13 @@ a { text-decoration: none; color: inherit; }
 .navbar { display:flex; justify-content:space-between; align-items:center; padding:0 20px 0 0; position:sticky; top:0; z-index:999; background:#fff; border-bottom:1px solid var(--border); }
 /* Navbar logo image */
 .navbar-logo {
-  height: 48px;
+  height: 44px;
   width: auto;
+  max-width: 180px;
   display: block;
-  /* Logo is white — invert to dark for white navbar */
-  filter: invert(1) brightness(0);
+  object-fit: contain;
 }
-.logo-wrap { display:flex; align-items:center; text-decoration:none; padding: 12px 0; }
+.logo-wrap { display:flex; align-items:center; text-decoration:none; padding: 14px 0; }
 /* Full corner logo box — SVG shield */
 .logo-icon-box { 
   width:54px; height:54px; 
@@ -127,7 +127,7 @@ a { text-decoration: none; color: inherit; }
 .product-card:hover { transform:translateY(-5px); box-shadow:0 10px 20px rgba(13,33,55,.15); }
 .card-link { position:absolute; top:0; left:0; right:0; bottom:0; z-index:1; }
 .image-wrapper { position:relative; width:100%; overflow:hidden; border-radius:6px; background:#f4f7fb; }
-.image-wrapper img { width:100%; height:220px; object-fit:cover; display:block; transition:transform .4s; }
+.image-wrapper img { width:100%; height:220px; object-fit:contain; padding:8px; display:block; transition:transform .4s; background:#f4f7fb; }
 .image-wrapper .hover-img { position:absolute; top:0; left:0; opacity:0; transition:opacity .3s; }
 .product-card:hover .image-wrapper img { transform:scale(1.05); }
 .product-card:hover .hover-img { opacity:1; }
@@ -362,6 +362,8 @@ a { text-decoration: none; color: inherit; }
   .lt-main { font-size:1.05rem; }
   .lt-sub { font-size:.68rem; }
   .navbar { padding:0 12px 0 0; }
+  .navbar-logo { height: 36px !important; max-width: 130px !important; }
+  .logo-wrap { padding: 10px 0; }
 }
 
 /* Hero slider mobile */
@@ -383,7 +385,7 @@ a { text-decoration: none; color: inherit; }
   /* Products */
   .product-box-main { gap:12px !important; }
   .product-card { width:calc(50% - 6px) !important; padding:10px !important; }
-  .image-wrapper img { height:160px !important; }
+  .image-wrapper img { height:160px !important; object-fit:contain !important; padding:6px !important; }
   .product-name-text { font-size:13px !important; }
   .product-subtitle { font-size:11px !important; }
   .shop-name { font-size:10px !important; }
@@ -436,7 +438,7 @@ a { text-decoration: none; color: inherit; }
   .men-women-watch-box { width:calc(50% - 5px) !important; }
   .men-women-watch-box-image { height:130px !important; }
   .product-card { width:calc(50% - 6px) !important; }
-  .image-wrapper img { height:130px !important; }
+  .image-wrapper img { height:130px !important; object-fit:contain !important; padding:5px !important; }
   .ss-grid { grid-template-columns:repeat(2,1fr) !important; }
   .stats-grid { grid-template-columns:repeat(2,1fr) !important; }
   .footer-top { grid-template-columns:1fr !important; }
