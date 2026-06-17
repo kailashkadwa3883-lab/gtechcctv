@@ -37,7 +37,7 @@ a { text-decoration: none; color: inherit; }
 .uh-wa-icon::after { content:'WhatsApp'; font-weight:700; color:#fff; font-size:13px; }
 
 /* ── NAVBAR ── */
-.navbar { display:flex; justify-content:space-between; align-items:center; padding:0 20px 0 0; position:sticky; top:0; z-index:999; background:#fff; border-bottom:1px solid var(--border); }
+.navbar { display:flex; justify-content:space-between; align-items:center; padding:0 20px 0 0; position:sticky; top:0; z-index:999; background:#fff; border-bottom:1px solid var(--border); position:sticky; }
 /* Navbar logo image */
 .navbar-logo {
   height: 44px;
@@ -47,6 +47,24 @@ a { text-decoration: none; color: inherit; }
   object-fit: contain;
 }
 .logo-wrap { display:flex; align-items:center; text-decoration:none; padding: 14px 0; }
+
+/* Guleriya Trading — center of navbar */
+.navbar-center-brand {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 1;
+}
+.ncb-text {
+  font-family: 'Rajdhani', 'Kumbh Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
 /* Full corner logo box — SVG shield */
 .logo-icon-box { 
   width:54px; height:54px; 
@@ -362,8 +380,11 @@ a { text-decoration: none; color: inherit; }
   .lt-main { font-size:1.05rem; }
   .lt-sub { font-size:.68rem; }
   .navbar { padding:0 12px 0 0; }
-  .navbar-logo { height: 36px !important; max-width: 130px !important; }
+  .navbar-logo { height: 36px !important; max-width: 110px !important; }
   .logo-wrap { padding: 10px 0; }
+  .navbar-center-brand { display: none; }
+  .nbt-main { display:none; }
+  .navbar-brand-text { display:none; }
 }
 
 /* Hero slider mobile */
@@ -456,3 +477,9 @@ a { text-decoration: none; color: inherit; }
   .product-card { width:100% !important; }
   .men-women-watch-box { width:100% !important; }
 }
+
+/* ── SERVICES BANNERS ── */
+.svc-img { width:100%; overflow:hidden; border-radius:10px 10px 0 0; }
+.svc-img img { width:100%; height:200px; object-fit:cover; display:block; }
+.svc-banner { height:160px !important; border-radius:10px 10px 0 0; }
+.svc-banner svg { flex-shrink:0; }
