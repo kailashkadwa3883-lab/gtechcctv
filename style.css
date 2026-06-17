@@ -37,7 +37,7 @@ a { text-decoration: none; color: inherit; }
 .uh-wa-icon::after { content:'WhatsApp'; font-weight:700; color:#fff; font-size:13px; }
 
 /* ── NAVBAR ── */
-.navbar { display:flex; justify-content:space-between; align-items:center; padding:0 20px 0 0; position:sticky; top:0; z-index:999; background:#fff; border-bottom:1px solid var(--border); position:sticky; }
+.navbar { display:grid; grid-template-columns:auto 1fr auto; align-items:center; padding:0 20px 0 0; position:sticky; top:0; z-index:999; background:#fff; border-bottom:1px solid var(--border); }
 /* Navbar logo image */
 .navbar-logo {
   height: 44px;
@@ -50,15 +50,14 @@ a { text-decoration: none; color: inherit; }
 
 /* Guleriya Trading — center of navbar */
 .navbar-center-brand {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   pointer-events: none;
-  z-index: 1;
 }
 .ncb-text {
   font-family: 'Rajdhani', 'Kumbh Sans', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: var(--primary);
   letter-spacing: .14em;
@@ -93,7 +92,7 @@ a { text-decoration: none; color: inherit; }
 .nav-actions { display:flex; gap:10px; align-items:center; }
 .nav-actions button { background:none; border:none; cursor:pointer; font-size:20px; color:var(--text); transition:color .3s; position:relative; }
 .nav-actions button:hover { color:var(--primary); }
-.hamburger { display:none; font-size:1.5em; background:none; border:none; color:var(--text); cursor:pointer; }
+.hamburger { display:none; font-size:1.5em; background:none; border:none; color:var(--text); cursor:pointer; padding:0 8px; }
 
 /* SEARCH BAR */
 #searchBar { position:relative; padding:12px 20px; background:var(--primary-light); display:none; }
@@ -337,8 +336,10 @@ a { text-decoration: none; color: inherit; }
   .men-women-watch-box { width:calc(33% - 14px); }
 }
 @media(max-width:768px) {
+  .navbar { grid-template-columns:auto 1fr auto; }
   .hamburger { display:block; }
   .menu { display:none; }
+  .navbar-center-brand { display:none; }
   .menu.show { display:block; background:#fff; position:absolute; top:60px; left:0; width:100%; border-top:1px solid var(--border); z-index:9999; height:100vh; padding:0; overflow-y:auto; }
   .menu ul { flex-direction:column; gap:0; }
   .menu ul li a { display:block; padding:15px 20px; border-bottom:1px solid #f0f0f0; padding-bottom:15px !important; color:var(--text); }
