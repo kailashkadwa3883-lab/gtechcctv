@@ -39,17 +39,18 @@ a { text-decoration: none; color: inherit; }
 /* ── NAVBAR ── */
 .navbar { display:flex; justify-content:space-between; align-items:center; padding:0 20px 0 0; position:sticky; top:0; z-index:999; background:#fff; border-bottom:1px solid var(--border); }
 .logo-wrap { display:flex; align-items:center; gap:.7rem; text-decoration:none; padding:0; }
-/* Full corner logo box — icon based */
+/* Full corner logo box — SVG shield */
 .logo-icon-box { 
-  width:52px; height:52px; 
+  width:54px; height:54px; 
   background:var(--primary); 
   border-radius:10px; 
   display:flex; align-items:center; justify-content:center; 
   flex-shrink:0;
+  padding:8px;
 }
-.logo-icon-box i { 
-  font-size:1.6rem; 
-  color:#fff; 
+.logo-icon-box svg { 
+  width:100%; height:100%;
+  fill:#fff; 
 }
 /* Keep old class for other pages still using it */
 .logo-corner-img { background:#fff; height:72px; width:130px; display:flex; align-items:center; justify-content:center; flex-shrink:0; padding:4px 6px; border-right:4px solid var(--primary); box-sizing:border-box; overflow:hidden; }
