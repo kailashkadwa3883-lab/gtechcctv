@@ -28,20 +28,24 @@ a { text-decoration: none; color: inherit; }
 
 /* ── UPPER HEADER ── */
 .upperheader { background: var(--primary); }
-.upperheader-box { width:100%; display:flex; justify-content:space-between; padding:10px; }
-.socialmedia-upper { display:flex; gap:20px; }
+.upperheader-box { width:100%; display:flex; justify-content:space-between; padding:8px 0; align-items:center; }
+.socialmedia-upper { display:flex; gap:20px; align-items:center; }
 .socialmedia-upper i { margin-right:5px; }
 .socialmedia-upper a { text-decoration:none; color:#fff; transition:.5s; font-weight:600; font-size:14px; }
 .socialmedia-upper a:hover { opacity:.85; }
+.uh-wa-icon { display:flex; align-items:center; background:#25d36622; border-radius:50px; padding:3px 10px 3px 6px; gap:5px; color:#25d366 !important; font-size:13px !important; }
+.uh-wa-icon::after { content:'WhatsApp'; font-weight:700; color:#fff; font-size:13px; }
 
 /* ── NAVBAR ── */
-.navbar { display:flex; justify-content:space-between; align-items:center; padding:0 20px; position:sticky; top:0; z-index:999; background:#fff; border-bottom:1px solid var(--border); }
-.logo a img { width:80px; vertical-align:bottom; }
-.logo-text { display:flex; flex-direction:column; }
-.logo-text .logo-main { font-size:1.3rem; font-weight:800; color:var(--primary); font-family:'Kumbh Sans',sans-serif; }
-.logo-text .logo-sub { font-size:.7rem; font-weight:600; color:var(--accent); letter-spacing:.04em; }
-.logo-wrap { display:flex; align-items:center; gap:.65rem; padding:12px 0; }
-.logo-icon { width:46px; height:46px; background:var(--primary); border-radius:9px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+.navbar { display:flex; justify-content:space-between; align-items:center; padding:0 20px 0 0; position:sticky; top:0; z-index:999; background:#fff; border-bottom:1px solid var(--border); }
+.logo-wrap { display:flex; align-items:center; gap:.7rem; text-decoration:none; padding:0; }
+/* Full corner logo box */
+.logo-corner-img { background:var(--primary); height:72px; width:72px; display:flex; align-items:center; justify-content:center; flex-shrink:0; padding:6px; }
+.logo-corner-img img { width:100%; height:100%; object-fit:contain; filter:brightness(0) invert(1); }
+.logo-text-block { display:flex; flex-direction:column; line-height:1.15; }
+.lt-main { font-size:1.25rem; font-weight:900; color:var(--primary); letter-spacing:.02em; font-family:'Kumbh Sans',sans-serif; }
+.lt-sub { font-size:.78rem; font-weight:700; color:var(--accent); letter-spacing:.06em; text-transform:uppercase; }
+
 .menu { display:flex; padding:15px; justify-content:center; }
 .menu ul { list-style:none; display:flex; gap:40px; padding:0; margin:0; }
 .menu ul li a { text-decoration:none; color:var(--text); font-weight:600; transition:.5s; padding-bottom:35px; font-size:15px; }
@@ -77,14 +81,18 @@ a { text-decoration: none; color: inherit; }
 /* ── CATEGORIES ── */
 .categories-list { width:100%; margin-top:50px; }
 .men-women-watch { display:flex; gap:20px; flex-wrap:wrap; justify-content:center; }
-.men-women-watch-box { position:relative; width:calc(20% - 16px); overflow:hidden; box-shadow:0 15px 30px rgba(0,0,0,.15); border-radius:12px; transition:all .4s cubic-bezier(.175,.885,.32,1.275); cursor:pointer; }
+.men-women-watch-box { position:relative; width:calc(20% - 16px); overflow:hidden; box-shadow:0 15px 30px rgba(0,0,0,.15); border-radius:12px; transition:all .4s cubic-bezier(.175,.885,.32,1.275); cursor:pointer; background:#f4f7fb; }
 .men-women-watch-box:hover { transform:translateY(-15px); box-shadow:0 20px 40px rgba(0,0,0,.2); }
-.men-women-watch-box-image { overflow:hidden; position:relative; height:280px; border-radius:12px; }
+.men-women-watch-box-image { overflow:hidden; position:relative; height:280px; border-radius:12px; background:#f4f7fb; }
 .men-women-watch-box-image img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .8s cubic-bezier(.23,1,.32,1); border-radius:12px; }
+/* For PNG product images — show full camera, no crop */
+.men-women-watch-box-image.cat-contain { background:#fff; }
+.men-women-watch-box-image.cat-contain img { object-fit:contain; padding:10px; transform:scale(.92); }
+.men-women-watch-box:hover .men-women-watch-box-image.cat-contain img { transform:scale(1); }
 .men-women-watch-box:hover .men-women-watch-box-image img { transform:scale(1.15); }
-.men-women-watch-box h6 { position:absolute; bottom:30px; left:25px; margin:0; font-size:22px; color:#fff; font-weight:700; text-shadow:0 2px 10px rgba(0,0,0,.4); z-index:2; transition:all .4s; }
-.men-women-watch-box:hover h6 { transform:translateX(10px); }
-.cat-overlay { position:absolute; inset:0; background:linear-gradient(to top,rgba(0,0,0,.6) 0%,transparent 60%); border-radius:12px; z-index:1; }
+.men-women-watch-box h6 { position:absolute; bottom:0; left:0; right:0; margin:0; font-size:18px; color:#fff; font-weight:700; text-shadow:0 2px 10px rgba(0,0,0,.6); z-index:2; transition:all .4s; background:linear-gradient(to top,rgba(0,0,0,.75) 0%,transparent 100%); padding:30px 18px 16px; text-align:left; border-radius:0 0 12px 12px; }
+.men-women-watch-box:hover h6 { padding-bottom:20px; }
+.cat-overlay { position:absolute; inset:0; background:linear-gradient(to top,rgba(0,0,0,.5) 0%,transparent 55%); border-radius:12px; z-index:1; }
 
 /* ── SECTION HEADING ── */
 .main-product-arrvial { background:#fafafa; margin-top:50px; padding-bottom:50px; }
@@ -292,7 +300,7 @@ a { text-decoration: none; color: inherit; }
 @media(max-width:768px) {
   .hamburger { display:block; }
   .menu { display:none; }
-  .menu.show { display:block; background:#fff; position:absolute; top:72px; left:0; width:100%; border-top:1px solid var(--border); z-index:9999; height:100vh; padding:0; overflow-y:auto; }
+  .menu.show { display:block; background:#fff; position:absolute; top:60px; left:0; width:100%; border-top:1px solid var(--border); z-index:9999; height:100vh; padding:0; overflow-y:auto; }
   .menu ul { flex-direction:column; gap:0; }
   .menu ul li a { display:block; padding:15px 20px; border-bottom:1px solid #f0f0f0; padding-bottom:15px !important; color:var(--text); }
   .men-women-watch-box { width:calc(50% - 10px); }
@@ -326,6 +334,14 @@ a { text-decoration: none; color: inherit; }
 
 /* Logo image in navbar */
 .logo-wrap img { height:48px !important; width:auto !important; }
+
+/* ── MOBILE NAVBAR LOGO CORNER ── */
+@media(max-width:768px) {
+  .logo-corner-img { height:60px; width:60px; }
+  .lt-main { font-size:1.05rem; }
+  .lt-sub { font-size:.68rem; }
+  .navbar { padding:0 12px 0 0; }
+}
 
 /* Hero slider mobile */
 @media(max-width:768px) {
@@ -407,6 +423,8 @@ a { text-decoration: none; color: inherit; }
   .upperheader-box { flex-direction:column !important; gap:3px !important; }
   .socialmedia-upper { gap:10px !important; flex-wrap:wrap !important; }
   .socialmedia-upper a { font-size:.72rem !important; }
+  .uh-wa-icon::after { display:none !important; }
+  .logo-corner-img { height:52px !important; width:52px !important; }
 }
 
 @media(max-width:360px) {
