@@ -40,8 +40,8 @@ a { text-decoration: none; color: inherit; }
 .navbar { display:flex; justify-content:space-between; align-items:center; padding:0 20px 0 0; position:sticky; top:0; z-index:999; background:#fff; border-bottom:1px solid var(--border); }
 .logo-wrap { display:flex; align-items:center; gap:.7rem; text-decoration:none; padding:0; }
 /* Full corner logo box */
-.logo-corner-img { background:#fff; height:72px; width:120px; display:flex; align-items:center; justify-content:center; flex-shrink:0; padding:6px 10px; border-right:4px solid var(--primary); box-sizing:border-box; }
-.logo-corner-img img { width:100%; height:100%; object-fit:contain; display:block; }
+.logo-corner-img { background:#fff; height:72px; width:130px; display:flex; align-items:center; justify-content:center; flex-shrink:0; padding:4px 6px; border-right:4px solid var(--primary); box-sizing:border-box; overflow:hidden; }
+.logo-corner-img img { width:100%; height:100%; object-fit:cover; object-position:center top; display:block; }
 .logo-text-block { display:flex; flex-direction:column; line-height:1.15; }
 .lt-main { font-size:1.25rem; font-weight:900; color:var(--primary); letter-spacing:.02em; font-family:'Kumbh Sans',sans-serif; }
 .lt-sub { font-size:.78rem; font-weight:700; color:var(--accent); letter-spacing:.06em; text-transform:uppercase; }
