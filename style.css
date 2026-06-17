@@ -38,7 +38,15 @@ a { text-decoration: none; color: inherit; }
 
 /* ── NAVBAR ── */
 .navbar { display:flex; justify-content:space-between; align-items:center; padding:0 20px 0 0; position:sticky; top:0; z-index:999; background:#fff; border-bottom:1px solid var(--border); }
-.logo-wrap { display:flex; align-items:center; gap:.7rem; text-decoration:none; padding:0; }
+/* Navbar logo image */
+.navbar-logo {
+  height: 48px;
+  width: auto;
+  display: block;
+  /* Logo is white — invert to dark for white navbar */
+  filter: invert(1) brightness(0);
+}
+.logo-wrap { display:flex; align-items:center; text-decoration:none; padding: 12px 0; }
 /* Full corner logo box — SVG shield */
 .logo-icon-box { 
   width:54px; height:54px; 
