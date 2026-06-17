@@ -40,8 +40,8 @@ a { text-decoration: none; color: inherit; }
 .navbar { display:flex; justify-content:space-between; align-items:center; padding:0 20px 0 0; position:sticky; top:0; z-index:999; background:#fff; border-bottom:1px solid var(--border); }
 .logo-wrap { display:flex; align-items:center; gap:.7rem; text-decoration:none; padding:0; }
 /* Full corner logo box */
-.logo-corner-img { background:var(--primary); height:72px; width:72px; display:flex; align-items:center; justify-content:center; flex-shrink:0; padding:6px; }
-.logo-corner-img img { width:100%; height:100%; object-fit:contain; filter:brightness(0) invert(1); }
+.logo-corner-img { background:#fff; height:72px; width:120px; display:flex; align-items:center; justify-content:center; flex-shrink:0; padding:6px 10px; border-right:4px solid var(--primary); box-sizing:border-box; }
+.logo-corner-img img { width:100%; height:100%; object-fit:contain; display:block; }
 .logo-text-block { display:flex; flex-direction:column; line-height:1.15; }
 .lt-main { font-size:1.25rem; font-weight:900; color:var(--primary); letter-spacing:.02em; font-family:'Kumbh Sans',sans-serif; }
 .lt-sub { font-size:.78rem; font-weight:700; color:var(--accent); letter-spacing:.06em; text-transform:uppercase; }
@@ -332,8 +332,8 @@ a { text-decoration: none; color: inherit; }
    MOBILE RESPONSIVE FIXES
    ═══════════════════════════════ */
 
-/* Logo image in navbar */
-.logo-wrap img { height:48px !important; width:auto !important; }
+/* Logo corner image - size controlled by .logo-corner-img */
+.logo-corner-img img { height:100% !important; width:100% !important; }
 
 /* ── MOBILE NAVBAR LOGO CORNER ── */
 @media(max-width:768px) {
@@ -419,12 +419,12 @@ a { text-decoration: none; color: inherit; }
   .ss-grid { grid-template-columns:repeat(2,1fr) !important; }
   .stats-grid { grid-template-columns:repeat(2,1fr) !important; }
   .footer-top { grid-template-columns:1fr !important; }
-  .logo-wrap img { height:38px !important; }
+  .logo-corner-img img { height:100% !important; width:100% !important; }
   .upperheader-box { flex-direction:column !important; gap:3px !important; }
   .socialmedia-upper { gap:10px !important; flex-wrap:wrap !important; }
   .socialmedia-upper a { font-size:.72rem !important; }
   .uh-wa-icon::after { display:none !important; }
-  .logo-corner-img { height:52px !important; width:52px !important; }
+  .logo-corner-img { height:60px !important; width:90px !important; }
 }
 
 @media(max-width:360px) {
