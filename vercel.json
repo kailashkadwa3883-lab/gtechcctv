@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "gtechcctv.com"
+        }
+      ],
+      "destination": "https://www.gtechcctv.com/$1",
+      "permanent": true
+    }
+  ]
+}
