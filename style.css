@@ -319,3 +319,99 @@ a { text-decoration: none; color: inherit; }
   .men-women-watch-box { width:100%; }
   .auto-slider { height:320px; }
 }
+
+/* ═══════════════════════════════
+   MOBILE RESPONSIVE FIXES
+   ═══════════════════════════════ */
+
+/* Logo image in navbar */
+.logo-wrap img { height:48px !important; width:auto !important; }
+
+/* Hero slider mobile */
+@media(max-width:768px) {
+  .auto-slider { height:420px !important; }
+  .auto-slider .slide { padding-left:5% !important; padding-right:5% !important; background-position:center right !important; }
+  .auto-slider .slide .info { padding:20px !important; max-width:100% !important; }
+  .auto-slider .slide .info h1 { font-size:1.75rem !important; margin-bottom:12px !important; letter-spacing:0 !important; }
+  .auto-slider .slide .info p { font-size:.9rem !important; margin-bottom:18px !important; }
+  .banner-btn { padding:10px 22px !important; font-size:.85rem !important; }
+  .dots-navigation { bottom:15px !important; }
+
+  /* Category boxes */
+  .men-women-watch { gap:10px !important; }
+  .men-women-watch-box { width:calc(50% - 5px) !important; }
+  .men-women-watch-box-image { height:160px !important; }
+  .men-women-watch-box h6 { font-size:14px !important; bottom:12px !important; left:12px !important; }
+
+  /* Products */
+  .product-box-main { gap:12px !important; }
+  .product-card { width:calc(50% - 6px) !important; padding:10px !important; }
+  .image-wrapper img { height:160px !important; }
+  .product-name-text { font-size:13px !important; }
+  .product-subtitle { font-size:11px !important; }
+  .shop-name { font-size:10px !important; }
+
+  /* Service strip */
+  .ss-grid { grid-template-columns:repeat(3,1fr) !important; }
+  .ss-card { padding:1rem .5rem !important; }
+  .ss-icon { font-size:1.5rem !important; }
+  .ss-title { font-size:.78rem !important; }
+  .ss-desc { display:none !important; }
+
+  /* Stats */
+  .stats-grid { grid-template-columns:repeat(3,1fr) !important; }
+
+  /* Testimonial */
+  .testimonial-container { flex-direction:column !important; }
+  .image-section { display:none !important; }
+  .text-section { width:100% !important; padding:30px 20px !important; }
+
+  /* Info strip */
+  .info-section { padding:20px !important; gap:15px !important; }
+  .info-item { max-width:100% !important; }
+
+  /* Brand list */
+  .brand-list-box-main { grid-template-columns:repeat(2,1fr) !important; }
+
+  /* Footer */
+  .footer-top { grid-template-columns:1fr 1fr !important; gap:20px !important; }
+  .footer-bottom { flex-direction:column !important; gap:5px !important; text-align:center !important; padding:12px 15px !important; }
+
+  /* Special offer */
+  .special-offer-main { flex-direction:column !important; }
+  .special-text { width:100% !important; padding:25px !important; }
+  .special-image { width:100% !important; height:200px !important; }
+
+  /* Newsletter */
+  .newsletter-inner { flex-direction:column !important; text-align:center !important; }
+  .newsletter-form { width:100% !important; flex-direction:column !important; }
+  .newsletter-form input { width:100% !important; }
+
+  /* Modal */
+  #modalContent { padding:.75rem !important; }
+  #modalBox { max-height:95vh !important; }
+  #modalContent > div { grid-template-columns:1fr !important; }
+}
+
+@media(max-width:480px) {
+  .auto-slider { height:380px !important; }
+  .auto-slider .slide .info h1 { font-size:1.5rem !important; }
+  .men-women-watch-box { width:calc(50% - 5px) !important; }
+  .men-women-watch-box-image { height:130px !important; }
+  .product-card { width:calc(50% - 6px) !important; }
+  .image-wrapper img { height:130px !important; }
+  .ss-grid { grid-template-columns:repeat(2,1fr) !important; }
+  .stats-grid { grid-template-columns:repeat(2,1fr) !important; }
+  .footer-top { grid-template-columns:1fr !important; }
+  .logo-wrap img { height:38px !important; }
+  .upperheader-box { flex-direction:column !important; gap:3px !important; }
+  .socialmedia-upper { gap:10px !important; flex-wrap:wrap !important; }
+  .socialmedia-upper a { font-size:.72rem !important; }
+}
+
+@media(max-width:360px) {
+  .auto-slider { height:340px !important; }
+  .auto-slider .slide .info h1 { font-size:1.3rem !important; }
+  .product-card { width:100% !important; }
+  .men-women-watch-box { width:100% !important; }
+}
