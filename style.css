@@ -510,3 +510,42 @@ a { text-decoration: none; color: inherit; }
 @media(min-width:769px) and (max-width:1024px) {
   .reviews-grid { grid-template-columns:repeat(2,1fr) !important; }
 }
+
+/* ── DESIGNER CREDIT ── */
+.footer-credit {
+  text-align: center;
+  font-size: 12px;
+  color: rgba(255,255,255,.4);
+  padding: 8px 0 4px;
+  border-top: 1px solid rgba(255,255,255,.08);
+  margin-top: 8px;
+}
+.footer-credit a {
+  color: rgba(255,255,255,.7);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color .2s;
+}
+.footer-credit a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* ── DESIGNER CREDIT ── */
+.footer-credit {
+  text-align: center;
+  padding: 8px 40px;
+  font-size: 12px;
+  color: rgba(255,255,255,.4);
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+.footer-credit a {
+  color: rgba(255,255,255,.7);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color .2s;
+}
+.footer-credit a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
