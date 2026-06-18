@@ -549,3 +549,22 @@ a { text-decoration: none; color: inherit; }
   color: #fff;
   text-decoration: underline;
 }
+
+/* ── FOOTER CREDIT INLINE ── */
+.footer-credit { display:none; }
+.footer-credit-inline {
+  font-size: 12px;
+  color: rgba(255,255,255,.5);
+  margin: 0;
+  white-space: nowrap;
+}
+.footer-credit-inline a {
+  color: rgba(255,255,255,.75);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color .2s;
+}
+.footer-credit-inline a:hover { color: #fff; }
+@media(max-width:600px) {
+  .footer-credit-inline { display:none; }
+}
